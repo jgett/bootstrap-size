@@ -2,6 +2,11 @@
 
 A jquery plugin that determines the current bootstrap screen size (lg, md, sm, xs). I made this for debugging purposes but maybe it could be useful for something else.
 
+### Install with npm
+```
+npm install https://github.com/jgett/bootstrap-size.git
+```
+
 ### Basic Usage
 ```html
 <html>
