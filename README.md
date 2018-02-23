@@ -48,14 +48,13 @@ $(".bootstrap-size-example").bootstrapSize({
 ### Methods
 ```javascript
 // Two methods are available via .data("methods")
-
 var bss = $(".bootstrap-size-example").bootstrapSize();
 
 // getSize(): returns the current size (lg, md, sm, xs)
 alert(bss.data("methods").getSize());
 
 // refresh(): updates the ".current-size" element and returns the current size (lg, md, sm, xs)
-bss.data("methods").refresh();
+alert(bss.data("methods").refresh());
 ```
 
 ### Event
