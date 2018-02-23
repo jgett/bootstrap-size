@@ -34,7 +34,7 @@ $.fn.bootstrapSize = function (options) {
         }, options, $this.data());
 
         var appendSpan = function (sz) {
-            if (!$this.find("[data-size='" + sz + "']"))
+            if ($this.find("[data-size='" + sz + "']").length === 0) {
                 $this.append($("<span/>", { "class": "visible-" + sz + "-inline", "data-size": sz }));
         };
 
