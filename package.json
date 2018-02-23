@@ -1,0 +1,20 @@
+{
+  "name": "bootstrap-size",
+  "version": "1.0.0",
+  "description": "A jquery plugin that determines the current bootstrap screen size (lg, md, sm, xs).",
+  "main": "bootstrap-size.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jgett/bootstrap-size.git"
+  },
+  "keywords": [
+    "jquery",
+    "bootstap"
+  ],
+  "author": "jgett",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jgett/bootstrap-size/issues"
+  },
+  "homepage": "https://github.com/jgett/bootstrap-size#readme"
+}
