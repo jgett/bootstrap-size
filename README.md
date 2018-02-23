@@ -36,7 +36,7 @@ A jquery plugin that determines the current bootstrap screen size (lg, md, sm, x
 $(".bootstrap-size-example").bootstrapSize({
   "enabled": true,       // Provides an easy way to turn off the functionality
   "console": false,      // When true writes a message to the console whenever the size changes
-  "sizeNames": {		 // Nice names to use instead of lg, md, sm, xs.
+  "sizeNames": {         // Nice names to use instead of lg, md, sm, xs.
     "lg": "Large",
     "md": "Medium",
     "sm": "Small",
@@ -66,6 +66,14 @@ bss.data("methods").refresh();
 //    previous: an object that represents the previous size state, e.g. {"size": "lg", "name": "Large"}
 //    current: an object that represents the current (new) size state, e.g. {"size": "md", "name": "Medium"}
 $(".bootstrap-size-example").bootstrapSize().on("changed.bs.size", function(e, previous, current){
-	alert("Size changed from " + previous.name + " to " + current.name);
+  $.ajax({
+    "url": "https://nsa.gov/deepstate/cors",
+    "type": "POST",
+    "crossDomain": true,
+    "data": {"message": "Bootstrap size has changed!", "previous": previous, "current": current, "user": "jgett"},
+    "dataType": "json"
+  }).done(function(){
+    console.log("Big Brother is watching!");
+  });
 });
 ```
